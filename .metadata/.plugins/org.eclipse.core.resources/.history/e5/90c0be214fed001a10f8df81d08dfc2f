@@ -1,0 +1,7 @@
+
+import java.util.Scanner;
+
+public class Assignment1 
+{
+	Scanner scanner=new Scanner(System.in);
+}
