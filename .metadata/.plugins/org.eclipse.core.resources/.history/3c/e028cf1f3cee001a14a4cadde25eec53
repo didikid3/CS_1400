@@ -100,7 +100,7 @@ public class Assignment1
 		{
 			//Only Want Double, if it is int convert, otherwise ask for different value
 			System.out.print("Enter the distance for throw "+(i+1)+": ");
-			if (scanner.hasNext() && scanner.hasNextDouble())
+			if (scanner.hasNextDouble())
 			{
 				contestant.setDistances(scanner.nextDouble(), i);
 			}
@@ -112,7 +112,6 @@ public class Assignment1
 			else
 			{
 				System.out.println("Please enter a number, not anything else.");
-				scanner.next();
 				i--;
 			}
 		}

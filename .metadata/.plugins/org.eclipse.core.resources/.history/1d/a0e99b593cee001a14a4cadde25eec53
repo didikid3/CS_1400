@@ -112,7 +112,6 @@ public class Assignment1
 			else
 			{
 				System.out.println("Please enter a number, not anything else.");
-				scanner.next();
 				i--;
 			}
 		}

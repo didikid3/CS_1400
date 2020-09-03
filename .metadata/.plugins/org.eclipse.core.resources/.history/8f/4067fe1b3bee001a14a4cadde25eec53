@@ -30,7 +30,6 @@ public class Assignment1
 	double[] athleteDistancesInch;
 	double[] athleteDistancesCm;
 	
-	//Will Store and Calculate all Data in Assignment1 Obj
 	public Assignment1()
 	{
 		athleteDistancesMeter = new double[3];
@@ -44,12 +43,15 @@ public class Assignment1
 	public double calculateYards(double distance) {
 		return distance*1.093;
 	}
+	
 	public double calculateFeet(double distance) {
 		return distance*3;
 	}
+	
 	public double calculateInch(double distance) {
 		return distance*12;
 	}
+	
 	public double calculateCm(double distance) {
 		return distance*100;
 	}
@@ -62,6 +64,7 @@ public class Assignment1
 		athleteDistancesInch[i] = calculateInch(athleteDistancesFeet[i]);
 		athleteDistancesCm[i] = calculateCm(distance);
 	}
+	
 	public void setName(String name){
 		athleteName = name;
 	}
@@ -69,6 +72,7 @@ public class Assignment1
 	public String getName() {
 		return athleteName;
 	}
+	
 	public double[] getYard() {
 		return athleteDistancesYard;
 	}
@@ -90,17 +94,14 @@ public class Assignment1
 		Assignment1 contestant = new Assignment1();
 		contestant.setName(scanner.next());
 		
-		//Asking for Name
 		System.out.println("\nOlympic Javelin Throws");
 		System.out.println("Enter the distances, in meters for "+contestant.getName()+"\n");
 		
-		//Asking for Distances
 		double temp;
 		for (int i = 0; i< 3; i++)
 		{
-			//Only Want Double, if it is int convert, otherwise ask for different value
 			System.out.print("Enter the distance for throw "+(i+1)+": ");
-			if (scanner.hasNext() && scanner.hasNextDouble())
+			if (scanner.hasNextDouble())
 			{
 				contestant.setDistances(scanner.nextDouble(), i);
 			}
@@ -112,24 +113,22 @@ public class Assignment1
 			else
 			{
 				System.out.println("Please enter a number, not anything else.");
-				scanner.next();
 				i--;
 			}
 		}
 		scanner.close();
-		
-		//Display Distances in different units
 		System.out.print("\n");
-		System.out.printf("%-10s%-10s%-10s%-10s\n","Yards","Feet","Inch","Cm");
+		System.out.printf("%-10s%-10s%-10s%-10s%\n","Yards","Feet","Inch","Cm");
+		//System.out.println("Yards          Feet          Inches          Cm");
 		for (int i=0; i<3; i++) 
 		{
-			System.out.printf("%-10.2f%-10.2f%-10.2f%-10.2f\n",
-					contestant.getYard()[i],
-					contestant.getFeet()[i],
-					contestant.getInch()[i],
-					contestant.getCm()[i]);
+			System.out.print(contestant.getYard()[i]);
+			System.out.printf("%10.2f",contestant.getFeet()[i]);
+			System.out.printf("%10.2f",contestant.getInch()[i]);
+			System.out.printf("%10.2f",contestant.getCm()[i]);
+			System.out.print("\n");
 		}
 		
-	}//End Main
+	}
 	
-}//End Class
+}
