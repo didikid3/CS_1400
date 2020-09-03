@@ -88,7 +88,7 @@ public class Assignment1
 		Scanner scanner=new Scanner(System.in);
 		System.out.print("Enter the competitor's name: ");
 		Assignment1 contestant = new Assignment1();
-		contestant.setName(scanner.nextLine());
+		contestant.setName(scanner.next());
 		
 		//Asking for Name
 		System.out.println("\nOlympic Javelin Throws");
