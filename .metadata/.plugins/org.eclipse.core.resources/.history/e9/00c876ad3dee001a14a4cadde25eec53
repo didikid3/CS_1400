@@ -3,7 +3,7 @@
 // FILENAME: Assignment1.java
 // SPECIFICATION: Pt. 1 Descriptions to Expressions.java     Pt. 2 Program to display distances given by user in different units 
 // FOR: CS 1400 - ASSIGNMENT #1
-// TIME SPENT: 1HR
+// TIME SPENT: 
 //*/
 
 //Assignment Part 1
@@ -16,7 +16,7 @@
 //g D add A, D add B. Divide the two No Decimal. 15+17=32, 16+17=33. 32/33=0
 //h A multiplied by A. Take the square root, result is a double. 15^2 = 225 Sqrt(225)=15.0
 //i  A to the power of 2.Returns Double. 15^2=225
-//j Finds the max between A and B, in this case B. 16
+ //j Finds the max between A and B, in this case B. 16
 
 //Assignment Part 2
 import java.util.Scanner;
@@ -92,7 +92,7 @@ public class Assignment1
 		
 		//Asking for Name
 		System.out.println("\nOlympic Javelin Throws");
-		System.out.println("Enter the distances, in meters for, "+contestant.getName()+"\n");
+		System.out.println("Enter the distances, in meters for "+contestant.getName()+"\n");
 		
 		//Asking for Distances
 		double temp;
