@@ -26,3 +26,9 @@ Yards           Feet            Inches          Cm
 ## Lab 1
 User is prompted to input 3 values. The average is calculated and displayed at the end.
 Due Date 9/4/2020 11:59PM
+```
+Enter the score on the first test: 90
+Enter the score on the second test: 90
+Enter the score on the third test: 92
+Your average score is: 90.6666
+```
