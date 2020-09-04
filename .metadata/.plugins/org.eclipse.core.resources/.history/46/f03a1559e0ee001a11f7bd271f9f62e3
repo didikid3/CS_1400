@@ -28,13 +28,10 @@ public class Lab1{
 		// Get the Input
 		System.out.print("Enter the score on the first test: ");
 		input1=scanner.nextInt();
-		System.out.print("\n");
 		System.out.print("Enter the score on the second test: ");
 		input2=scanner.nextInt();
-		System.out.print("\n");
 		System.out.print("Enter the score on the third test: ");
 		input3=scanner.nextInt();
-		System.out.print("\n");
 
 
 		// Calculate the average
