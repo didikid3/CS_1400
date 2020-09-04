@@ -1,9 +1,9 @@
 /*-------------------------------------------------------------------------
 // AUTHOR: Brandon Chao
 // FILENAME: Lab1.java
-// SPECIFICATION: Guided lab/activity Sept 4, Get user input, calculate average
+// SPECIFICATION: Guided lab/activity Sept 4
 // FOR: CS 1400- Lab #1
-// TIME SPENT: 8 Min
+// TIME SPENT: 
 //-----------------------------------------------------------*/
 
 // All imports have to be included outside the public class
@@ -39,8 +39,6 @@ public class Lab1{
 
 		// Display Results
 		System.out.println("Your average test score is: "+average);
-		
-		scanner.close();
 
 	}//end main method
 }//end Lab1 class
