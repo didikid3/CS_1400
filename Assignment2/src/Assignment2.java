@@ -43,7 +43,7 @@
  X=3 and Y=6, What do the following expressions evaluate
  A True
  b False
- c False
+ c True
  d True
  
  */
